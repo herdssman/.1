@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-Content-Type-Options" content="nosniff">
+        <meta http-equiv="X-Frame-Options" content="DENY">
+        <meta http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+    
+        <title>Document</title>
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+            integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+      
+<body>
+
+    <!-- #region header -->
+
+    <header class="header">
+        <div class="h-cont container">
+            <nav class="h-nav">
+                <a class="logo" href="#">Music<br> NFT Platform</a>
+                <ul class="h-list">
+                    <li class="h-list-item"><a href="#about" class="h-list-link">About</a></li>
+                    <li class="h-list-item"><a href="#market" class="h-list-link">Marketplace</a></li>
+                    <li class="h-list-item"><a href="#faq" class="h-list-link">Guide</a></li>
+                    <li class="h-list-item"><a href="#discover" class="h-list-link">Discover</a></li>
+                </ul>
+                <form class="h-form" action="search" method="get">
+                    <label for="searchQuery"></label>
+                    <div class="h-div">
+                        <svg class="icon-search" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 32 32">
+                            <path
+                                d="M13.176 24.471c-6.229 0-11.294-5.065-11.294-11.294s5.065-11.294 11.294-11.294c6.229 0 11.294 5.065 11.294 11.294s-5.065 11.294-11.294 11.294zM23.123 21.792c2.007-2.312 3.23-5.321 3.23-8.616 0-7.264-5.912-13.176-13.176-13.176s-13.176 5.912-13.176 13.176 5.912 13.176 13.176 13.176c3.294 0 6.304-1.224 8.616-3.23l8.6 8.602 1.333-1.333-8.602-8.6z">
+                            </path>
+                        </svg>
+                    </div>
+                    <input type="search" id="searchQuery" name="query" aria-label="Search"
+                        placeholder="Search for Music NFT">
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <!-- #endregion -->
+        
+    <main>
+
+        <!-- #region gradient -->
+
+        <section class="gradient-section">
+            <div class="gradient gradient-1"></div>
+            <div class="gradient gradient-2"></div>
+            <div class="gradient gradient-3"></div>
+            <div class="gradient gradient-4"></div>
+            <div class="gradient gradient-5"></div>
+            <div class="gradient gradient-6"></div>
+        </section>
+
+        <!-- #endregion -->
+
+        <!-- #region background -->
+        <!-- 
+                <div class="gradient"><svg width="1440" height="3794" viewBox="0 0 1440 3794" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_f_2_5)">
+                        <circle cx="883.883" cy="3047.88" r="245.109" transform="rotate(-22.5384 883.883 3047.88)"
+                            fill="url(#paint0_linear_2_5)" />
+                    </g>
+                    <g filter="url(#filter1_f_2_5)">
+                        <circle cx="992.34" cy="1388.34" r="245.109" transform="rotate(-22.5384 992.34 1388.34)"
+                            fill="url(#paint1_linear_2_5)" />
+                    </g>
+                    <g filter="url(#filter2_f_2_5)">
+                        <ellipse cx="215.795" cy="-2.12078" rx="348.703" ry="409.259" transform="rotate(54.3515 215.795 -2.12078)"
+                            fill="url(#paint2_linear_2_5)" />
+                    </g>
+                    <g filter="url(#filter3_f_2_5)">
+                        <ellipse cx="-98.4408" cy="195.916" rx="225.124" ry="293.536" transform="rotate(76.6598 -98.4408 195.916)"
+                            fill="url(#paint3_linear_2_5)" />
+                    </g>
+                    <g filter="url(#filter4_f_2_5)">
+                        <circle cx="208.253" cy="329.804" r="173.275" transform="rotate(-22.5384 208.253 329.804)"
+                            fill="url(#paint4_linear_2_5)" />
+                    </g>
+                    <g filter="url(#filter5_f_2_5)">
+                        <ellipse cx="108.254" cy="-4.51854" rx="216.894" ry="318.289" transform="rotate(76.6598 108.254 -4.51854)"
+                            fill="url(#paint5_linear_2_5)" />
+                        <path
+                            d="M417.469 -77.8435C431.239 -19.7743 409.178 41.0433 362.263 92.4432C315.351 143.841 243.621 185.777 158.184 206.037C72.7472 226.296 -10.176 221.033 -75.1717 196.173C-140.17 171.311 -187.19 126.875 -200.961 68.8056C-214.73 10.7366 -192.669 -50.0804 -145.755 -101.48C-98.8422 -152.878 -27.1113 -194.814 58.3255 -215.074C143.762 -235.333 226.685 -230.07 291.68 -205.21C356.679 -180.348 403.699 -135.912 417.469 -77.8435Z"
+                            stroke="black" />
+                    </g>
+                    <defs>
+                        <filter id="filter0_f_2_5" x="138.709" y="2302.71" width="1490.35" height="1490.35" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_2_5" />
+                        </filter>
+                        <filter id="filter1_f_2_5" x="247.166" y="643.166" width="1490.35" height="1490.35" filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_2_5" />
+                        </filter>
+                        <filter id="filter2_f_2_5" x="-441.948" y="-640.453" width="1315.49" height="1276.66"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="133.97" result="effect1_foregroundBlur_2_5" />
+                        </filter>
+                        <filter id="filter3_f_2_5" x="-742.257" y="-386.892" width="1287.63" height="1165.62"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="176.733" result="effect1_foregroundBlur_2_5" />
+                        </filter>
+                        <filter id="filter4_f_2_5" x="-318.532" y="-196.981" width="1053.57" height="1053.57"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="176.733" result="effect1_foregroundBlur_2_5" />
+                        </filter>
+                        <filter id="filter5_f_2_5" x="-394.926" y="-417.449" width="1006.36" height="825.861"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="94.7075" result="effect1_foregroundBlur_2_5" />
+                        </filter>
+                        <linearGradient id="paint0_linear_2_5" x1="883.883" y1="2802.77" x2="883.883" y2="3292.99"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2603FB" />
+                            <stop offset="1" stop-color="#DC06FF" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_2_5" x1="992.34" y1="1143.23" x2="992.34" y2="1633.45"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2603FB" />
+                            <stop offset="1" stop-color="#DC06FF" />
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_2_5" x1="582.946" y1="46.4649" x2="-64.0722" y2="127.575"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#7000FF" />
+                            <stop offset="1" stop-color="#06FFF0" />
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_2_5" x1="-98.4409" y1="-97.6202" x2="-98.4409" y2="489.452"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#03FB75" />
+                            <stop offset="1" stop-color="#06FFF0" />
+                        </linearGradient>
+                        <linearGradient id="paint4_linear_2_5" x1="208.253" y1="156.529" x2="208.253" y2="503.079"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#2603FB" />
+                            <stop offset="1" stop-color="#DC06FF" />
+                        </linearGradient>
+                        <linearGradient id="paint5_linear_2_5" x1="108.254" y1="-322.808" x2="108.254" y2="313.771"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FB03F5" />
+                            <stop offset="1" stop-color="#AA9CFF" />
+                        </linearGradient>
+                    </defs>    </svg>
+                </div> -->
+        <!-- #endregion -->
+
+        <!-- #region hero -->
+
+            <section class="hero">
+                <div class="hero-cont container">
+                    <h1 class="he-h1">Music for NFT creators</h1>
+                    <h2 class="he-h2">Digital Music for fans</h2>
+                    <p class="he-p">Music NFTs will continue to revolutionize the way that artists and fans create community together as we enter the upcoming year — undoubtedly changing the trajectory of countless budding music careers.</p>
+                    <div class="he-flex-div1">
+                        <div class="he-flex-div2">
+                            <p class="he-powered">Powered by</p>
+                            <svg class="icon-solana" width="102" height="12" viewBox="0 0 254 32">
+                                <defs>
+                                    <filter id="shadow">
+                                        <feDropShadow dx="-5" dy="6" stdDeviation="25" flood-color="black" flood-opacity="0.8" />
+                                    </filter>
+                                </defs>
+                                    <path fill="#fff" style="fill: var(--color1, #fff)" filter="url(#shadow)"
+                                        d="M74.122 13.718h-18.324v-6.094h23.068v-6.094h-23.11c-1.605 0-3.144 0.638-4.279 1.772s-1.772 2.674-1.772 4.279v6.179c0 1.605 0.638 3.144 1.772 4.279s2.674 1.772 4.279 1.772h18.324v6.094h-23.94v6.094h23.982c1.605 0 3.144-0.638 4.279-1.773s1.773-2.674 1.773-4.279v-6.179c0-1.605-0.638-3.144-1.773-4.279s-2.674-1.772-4.279-1.772z">
+                                    </path>
+                                    <path fill="#fff" style="fill: var(--color1, #fff)" filter="url(#shadow)"
+                                        d="M109.606 1.53h-18.392c-0.794 0-1.581 0.157-2.315 0.461s-1.401 0.75-1.962 1.312c-0.562 0.562-1.007 1.229-1.311 1.963s-0.46 1.521-0.459 2.316v18.366c-0.001 0.795 0.156 1.581 0.459 2.316s0.749 1.401 1.311 1.963c0.561 0.562 1.228 1.008 1.962 1.312s1.521 0.461 2.315 0.461h18.392c1.605 0 3.144-0.638 4.279-1.773s1.773-2.674 1.773-4.279v-18.366c0-1.605-0.638-3.144-1.773-4.279s-2.674-1.772-4.279-1.772v0zM109.564 25.906h-18.282v-18.282h18.282v18.282z">
+                                    </path>
+                                    <path fill="#fff" style="fill: var(--color1, #fff)" filter="url(#shadow)"
+                                        d="M173.973 1.53h-17.935c-1.605 0-3.144 0.638-4.279 1.772s-1.773 2.674-1.773 4.279v24.418h6.094v-10.013h17.85v10.013h6.094v-24.418c0-0.795-0.156-1.582-0.46-2.316s-0.75-1.402-1.312-1.964-1.23-1.008-1.964-1.312c-0.735-0.304-1.522-0.46-2.317-0.46zM173.931 15.893h-17.85v-8.269h17.85v8.269z">
+                                    </path>
+                                    <path fill="#fff" style="fill: var(--color1, #fff)" filter="url(#shadow)"
+                                        d="M245.323 1.53h-17.931c-0.796-0.002-1.584 0.154-2.32 0.457s-1.404 0.749-1.968 1.311c-0.563 0.562-1.010 1.23-1.315 1.965s-0.462 1.523-0.462 2.319v24.418h6.094v-10.013h17.859v10.013h6.094v-24.418c0-1.605-0.638-3.144-1.772-4.279s-2.676-1.772-4.279-1.772zM245.281 15.893h-17.846v-8.269h17.846v8.269z">
+                                    </path>
+                                    <path fill="#fff" style="fill: var(--color1, #fff)" filter="url(#shadow)"
+                                        d="M209.822 25.906h-2.438l-8.735-21.837c-0.299-0.749-0.815-1.392-1.483-1.844s-1.456-0.695-2.262-0.695h-5.425c-1.070 0-2.095 0.425-2.852 1.181s-1.181 1.782-1.181 2.852v26.437h6.094v-24.376h2.438l8.73 21.836c0.298 0.749 0.813 1.392 1.48 1.845s1.455 0.695 2.261 0.695h5.425c1.070 0 2.095-0.425 2.852-1.181s1.181-1.782 1.181-2.852v-26.437h-6.094l0.009 24.376z">
+                                    </path>
+                                    <path fill="#fff" style="fill: var(--color1, #fff)" filter="url(#shadow)"
+                                        d="M127.151 1.53h-6.094v24.418c0 1.605 0.638 3.144 1.773 4.279s2.674 1.773 4.279 1.773h18.324v-6.094h-18.282v-24.376z">
+                                    </path>
+                                    <path fill="#fff" style="fill: var(--color1, #fff)" filter="url(#shadow)"
+                                        d="M6.449 24.763c0.108-0.117 0.239-0.211 0.384-0.277s0.303-0.101 0.462-0.104h26.593c0.112 0.002 0.222 0.036 0.316 0.098s0.167 0.151 0.212 0.254c0.045 0.103 0.059 0.217 0.040 0.328s-0.069 0.214-0.145 0.297l-5.637 6.259c-0.108 0.117-0.239 0.211-0.384 0.277s-0.303 0.101-0.462 0.104h-26.61c-0.113-0.002-0.222-0.036-0.316-0.098s-0.167-0.151-0.212-0.254c-0.045-0.103-0.059-0.217-0.040-0.328s0.069-0.214 0.145-0.297l5.654-6.259zM34.337 19.575c0.076 0.083 0.126 0.186 0.145 0.297s0.004 0.225-0.040 0.328c-0.045 0.103-0.118 0.191-0.212 0.254s-0.203 0.096-0.316 0.098l-26.602 0.021c-0.159-0.003-0.317-0.039-0.462-0.104s-0.276-0.16-0.384-0.277l-5.679-6.238c-0.076-0.083-0.126-0.186-0.145-0.297s-0.005-0.225 0.040-0.328c0.045-0.103 0.118-0.191 0.212-0.254s0.203-0.097 0.316-0.098l26.602-0.021c0.16 0.003 0.317 0.039 0.462 0.104s0.276 0.16 0.384 0.277l5.679 6.238zM6.449 1.911c0.108-0.117 0.239-0.211 0.384-0.277s0.303-0.101 0.462-0.104l26.61 0.021c0.112 0.002 0.222 0.036 0.316 0.098s0.167 0.151 0.212 0.254c0.045 0.103 0.059 0.217 0.040 0.328s-0.069 0.214-0.145 0.297l-5.654 6.238c-0.108 0.117-0.239 0.211-0.384 0.277s-0.303 0.101-0.462 0.104h-26.61c-0.113-0.002-0.222-0.036-0.316-0.098s-0.167-0.151-0.212-0.254c-0.045-0.103-0.059-0.217-0.040-0.328s0.069-0.214 0.145-0.297l5.654-6.259z">
+                                    </path>
+                            </svg>
+                        </div>
+                        <button type="button" class="he-btn">
+                            <a href="#discover" class="he-a">
+                                <span class="he-btn-span">
+                                    <span class="he-btn-text">Discover More</span>
+                                    <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13.5L7 7.5L1 1.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </button>
+                    </div>
+                    <img class="he-img" src="./images/hand.png" alt="hand">
+                </div>
+            </section>
+            <!-- <div class="he-line-cont">
+                <div class="he-line-wrapper">
+                    <div class="he-line">
+                        <span class="he-line-text">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 18H33" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M18 3C21.7519 7.10753 23.8841 12.4381 24 18C23.8841 23.5619 21.7519 28.8925 18 33C14.2481 28.8925 12.1159 23.5619 12 18C12.1159 12.4381 14.2481 7.10753 18 3V3Z"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>NEW WAY TO REACH THE FANS
+                        </span>
+                        <span class="he-line-text">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 18H33" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M18 3C21.7519 7.10753 23.8841 12.4381 24 18C23.8841 23.5619 21.7519 28.8925 18 33C14.2481 28.8925 12.1159 23.5619 12 18C12.1159 12.4381 14.2481 7.10753 18 3V3Z"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>NEW WAY TO REACH THE FANS
+                        </span>
+                        <span class="he-line-text">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 18H33" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M18 3C21.7519 7.10753 23.8841 12.4381 24 18C23.8841 23.5619 21.7519 28.8925 18 33C14.2481 28.8925 12.1159 23.5619 12 18C12.1159 12.4381 14.2481 7.10753 18 3V3Z"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>NEW WAY TO REACH THE FANS
+                        </span>
+                        <span class="he-line-text">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 18H33" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M18 3C21.7519 7.10753 23.8841 12.4381 24 18C23.8841 23.5619 21.7519 28.8925 18 33C14.2481 28.8925 12.1159 23.5619 12 18C12.1159 12.4381 14.2481 7.10753 18 3V3Z"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>NEW WAY TO REACH THE FANS
+                        </span>
+                        <span class="he-line-text">
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 18H33" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M18 3C21.7519 7.10753 23.8841 12.4381 24 18C23.8841 23.5619 21.7519 28.8925 18 33C14.2481 28.8925 12.1159 23.5619 12 18C12.1159 12.4381 14.2481 7.10753 18 3V3Z"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>NEW WAY TO REACH THE FANS <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3 18H33" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M18 3C21.7519 7.10753 23.8841 12.4381 24 18C23.8841 23.5619 21.7519 28.8925 18 33C14.2481 28.8925 12.1159 23.5619 12 18C12.1159 12.4381 14.2481 7.10753 18 3V3Z"
+                                    stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div> -->
+              
+
+            <!-- <script>
+                window.addEventListener('DOMContentLoaded', () => {
+                    const wrapper = document.querySelector('.he-line-wrapper');
+                    const line = wrapper.querySelector('.he-line');
+                    const clone = line.cloneNode(true);
+                    wrapper.appendChild(clone);
+                });
+            </script> -->
+              
+
+        <!-- #endregion -->
+                    
+        <!-- #region about -->
+
+            <section class="about container" id="about">
+                <div class="ab-left">
+                    <h2 class="ab-h">How do Music NFTs work?</h2>
+                    <p class="ab-p">NFTs are unique assets stored and tradable on a blockchain. They are, immutable, scarce and publicly verifiable. In the music world, artistes get to sell limited digital content to their fans who pay via crypto. You can now produce any music content that cannot be counterfeited.</p>
+                </div>
+                <div class="ab-right">
+                    <img src="./images/music-styles.png" alt="music styles" class="ab-img">
+                    <svg class="ab-svg" width="487" height="416" viewBox="0 0 487 416" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 172.5V0.5H486V207.75V415H243.5" stroke="white" /></svg>
+                    <div class="gradient gradient-7"></div>
+                </div>
+            </section>
+
+        <!-- #endregion -->
+
+        <!-- #region market -->
+
+        <section class="market container" id="market">
+            <div class="ma-div">
+                <div class="ma-left">
+                    <ul class="ma-ul">
+                        <li class="ma-li ma-li-odd">
+                            <img src="./images/market-juice.jpeg" alt="" class="ma-img">
+                            <ul class="ma-ul2">
+                                <li class="ma-li2">
+                                    <h4 class="ma-li-genre">Rap Music</h4>
+                                    <div class="ma-li-div">
+                                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M2.50782 10.4856C2.55448 10.435 2.61086 10.3943 2.67358 10.3661C2.73631 10.3378 2.80408 10.3225 2.87285 10.3211H14.3419C14.3905 10.3218 14.4377 10.3365 14.4781 10.3635C14.5185 10.3904 14.5502 10.4285 14.5695 10.4731C14.5888 10.5177 14.5948 10.5669 14.5868 10.6149C14.5788 10.6628 14.5571 10.7074 14.5244 10.7433L12.0934 13.4468C12.0467 13.4974 11.9903 13.5381 11.9276 13.5664C11.8649 13.5946 11.7971 13.6099 11.7283 13.6113H0.251971C0.203444 13.6106 0.156148 13.5959 0.115772 13.569C0.075396 13.542 0.0436591 13.5039 0.0243789 13.4593C0.0050987 13.4147 -0.00090373 13.3655 0.00709359 13.3175C0.0150909 13.2696 0.0367474 13.225 0.0694582 13.1891L2.50782 10.4856ZM14.5354 8.24459C14.5681 8.28049 14.5898 8.3251 14.5978 8.37304C14.6057 8.42098 14.5997 8.47022 14.5805 8.51482C14.5612 8.55943 14.5295 8.5975 14.4891 8.62447C14.4487 8.65144 14.4014 8.66615 14.3529 8.66684L2.88015 8.67597C2.81138 8.67457 2.74361 8.65927 2.68088 8.631C2.61816 8.60273 2.56178 8.56207 2.51512 8.51146L0.0658079 5.81712C0.0330972 5.78122 0.0114407 5.73661 0.00344335 5.68867C-0.00455397 5.64073 0.00144846 5.59149 0.0207287 5.54689C0.0400089 5.50228 0.0717457 5.46421 0.112122 5.43724C0.152498 5.41027 0.199794 5.39556 0.24832 5.39488L11.721 5.38574C11.7898 5.38714 11.8576 5.40244 11.9203 5.43071C11.983 5.45898 12.0394 5.49964 12.0861 5.55025L14.5354 8.24459ZM2.50782 0.61489C2.55448 0.564278 2.61086 0.52362 2.67358 0.495351C2.73631 0.467083 2.80408 0.451787 2.87285 0.450378L14.3492 0.459518C14.3978 0.460202 14.445 0.474914 14.4854 0.501882C14.5258 0.52885 14.5575 0.566927 14.5768 0.611532C14.5961 0.656137 14.6021 0.705371 14.5941 0.753312C14.5861 0.801253 14.5644 0.845859 14.5317 0.881765L12.0934 3.57611C12.0467 3.62672 11.9903 3.66738 11.9276 3.69564C11.8649 3.72391 11.7971 3.73921 11.7283 3.74062H0.251971C0.203444 3.73993 0.156148 3.72522 0.115772 3.69825C0.075396 3.67129 0.0436591 3.63321 0.0243789 3.5886C0.0050987 3.544 -0.00090373 3.49476 0.00709359 3.44682C0.0150909 3.39888 0.0367474 3.35428 0.0694582 3.31837L2.50782 0.61489Z"
+                                                    fill="white" />
+                                        </svg>
+                                        <p class="ma-li-p">0.3234</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <svg class="ma-svg" width="198" height="248" viewBox="0 0 198 248" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.5 1.0351H1V247.411H197V185.817" stroke="white" />
+                            </svg>
+                        </li>
+                        <li class="ma-li ma-li-even">
+                            <img src="./images/market-kendrick.jpeg" alt="" class="ma-img">
+                            <ul class="ma-ul2">
+                                <li class="ma-li2">
+                                    <h4 class="ma-li-genre">Rap Music</h4>
+                                    <div class="ma-li-div">
+                                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M2.50782 10.4856C2.55448 10.435 2.61086 10.3943 2.67358 10.3661C2.73631 10.3378 2.80408 10.3225 2.87285 10.3211H14.3419C14.3905 10.3218 14.4377 10.3365 14.4781 10.3635C14.5185 10.3904 14.5502 10.4285 14.5695 10.4731C14.5888 10.5177 14.5948 10.5669 14.5868 10.6149C14.5788 10.6628 14.5571 10.7074 14.5244 10.7433L12.0934 13.4468C12.0467 13.4974 11.9903 13.5381 11.9276 13.5664C11.8649 13.5946 11.7971 13.6099 11.7283 13.6113H0.251971C0.203444 13.6106 0.156148 13.5959 0.115772 13.569C0.075396 13.542 0.0436591 13.5039 0.0243789 13.4593C0.0050987 13.4147 -0.00090373 13.3655 0.00709359 13.3175C0.0150909 13.2696 0.0367474 13.225 0.0694582 13.1891L2.50782 10.4856ZM14.5354 8.24459C14.5681 8.28049 14.5898 8.3251 14.5978 8.37304C14.6057 8.42098 14.5997 8.47022 14.5805 8.51482C14.5612 8.55943 14.5295 8.5975 14.4891 8.62447C14.4487 8.65144 14.4014 8.66615 14.3529 8.66684L2.88015 8.67597C2.81138 8.67457 2.74361 8.65927 2.68088 8.631C2.61816 8.60273 2.56178 8.56207 2.51512 8.51146L0.0658079 5.81712C0.0330972 5.78122 0.0114407 5.73661 0.00344335 5.68867C-0.00455397 5.64073 0.00144846 5.59149 0.0207287 5.54689C0.0400089 5.50228 0.0717457 5.46421 0.112122 5.43724C0.152498 5.41027 0.199794 5.39556 0.24832 5.39488L11.721 5.38574C11.7898 5.38714 11.8576 5.40244 11.9203 5.43071C11.983 5.45898 12.0394 5.49964 12.0861 5.55025L14.5354 8.24459ZM2.50782 0.61489C2.55448 0.564278 2.61086 0.52362 2.67358 0.495351C2.73631 0.467083 2.80408 0.451787 2.87285 0.450378L14.3492 0.459518C14.3978 0.460202 14.445 0.474914 14.4854 0.501882C14.5258 0.52885 14.5575 0.566927 14.5768 0.611532C14.5961 0.656137 14.6021 0.705371 14.5941 0.753312C14.5861 0.801253 14.5644 0.845859 14.5317 0.881765L12.0934 3.57611C12.0467 3.62672 11.9903 3.66738 11.9276 3.69564C11.8649 3.72391 11.7971 3.73921 11.7283 3.74062H0.251971C0.203444 3.73993 0.156148 3.72522 0.115772 3.69825C0.075396 3.67129 0.0436591 3.63321 0.0243789 3.5886C0.0050987 3.544 -0.00090373 3.49476 0.00709359 3.44682C0.0150909 3.39888 0.0367474 3.35428 0.0694582 3.31837L2.50782 0.61489Z"
+                                                    fill="white" />
+                                        </svg>
+                                        <p class="ma-li-p">0.3234</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <svg class="ma-svg" width="198" height="248" viewBox="0 0 198 248" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.5 1.0351H1V247.411H197V185.817" stroke="white" />
+                            </svg>
+                        </li>
+                        <li class="ma-li ma-li-odd">
+                            <img src="./images/market-kid-laroi.png" alt="" class="ma-img">
+                            <ul class="ma-ul2">
+                                <li class="ma-li2">
+                                    <h4 class="ma-li-genre">Rap Music</h4>
+                                    <div class="ma-li-div">
+                                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M2.50782 10.4856C2.55448 10.435 2.61086 10.3943 2.67358 10.3661C2.73631 10.3378 2.80408 10.3225 2.87285 10.3211H14.3419C14.3905 10.3218 14.4377 10.3365 14.4781 10.3635C14.5185 10.3904 14.5502 10.4285 14.5695 10.4731C14.5888 10.5177 14.5948 10.5669 14.5868 10.6149C14.5788 10.6628 14.5571 10.7074 14.5244 10.7433L12.0934 13.4468C12.0467 13.4974 11.9903 13.5381 11.9276 13.5664C11.8649 13.5946 11.7971 13.6099 11.7283 13.6113H0.251971C0.203444 13.6106 0.156148 13.5959 0.115772 13.569C0.075396 13.542 0.0436591 13.5039 0.0243789 13.4593C0.0050987 13.4147 -0.00090373 13.3655 0.00709359 13.3175C0.0150909 13.2696 0.0367474 13.225 0.0694582 13.1891L2.50782 10.4856ZM14.5354 8.24459C14.5681 8.28049 14.5898 8.3251 14.5978 8.37304C14.6057 8.42098 14.5997 8.47022 14.5805 8.51482C14.5612 8.55943 14.5295 8.5975 14.4891 8.62447C14.4487 8.65144 14.4014 8.66615 14.3529 8.66684L2.88015 8.67597C2.81138 8.67457 2.74361 8.65927 2.68088 8.631C2.61816 8.60273 2.56178 8.56207 2.51512 8.51146L0.0658079 5.81712C0.0330972 5.78122 0.0114407 5.73661 0.00344335 5.68867C-0.00455397 5.64073 0.00144846 5.59149 0.0207287 5.54689C0.0400089 5.50228 0.0717457 5.46421 0.112122 5.43724C0.152498 5.41027 0.199794 5.39556 0.24832 5.39488L11.721 5.38574C11.7898 5.38714 11.8576 5.40244 11.9203 5.43071C11.983 5.45898 12.0394 5.49964 12.0861 5.55025L14.5354 8.24459ZM2.50782 0.61489C2.55448 0.564278 2.61086 0.52362 2.67358 0.495351C2.73631 0.467083 2.80408 0.451787 2.87285 0.450378L14.3492 0.459518C14.3978 0.460202 14.445 0.474914 14.4854 0.501882C14.5258 0.52885 14.5575 0.566927 14.5768 0.611532C14.5961 0.656137 14.6021 0.705371 14.5941 0.753312C14.5861 0.801253 14.5644 0.845859 14.5317 0.881765L12.0934 3.57611C12.0467 3.62672 11.9903 3.66738 11.9276 3.69564C11.8649 3.72391 11.7971 3.73921 11.7283 3.74062H0.251971C0.203444 3.73993 0.156148 3.72522 0.115772 3.69825C0.075396 3.67129 0.0436591 3.63321 0.0243789 3.5886C0.0050987 3.544 -0.00090373 3.49476 0.00709359 3.44682C0.0150909 3.39888 0.0367474 3.35428 0.0694582 3.31837L2.50782 0.61489Z"
+                                                    fill="white"/>
+                                        </svg>
+                                        <p class="ma-li-p">0.3234</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <svg class="ma-svg" width="198" height="248" viewBox="0 0 198 248" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.5 1.0351H1V247.411H197V185.817" stroke="white" />
+                            </svg>
+                        </li>
+                        <li class="ma-li ma-li-even">
+                            <img src="./images/market-cole.jpeg" alt="" class="ma-img">
+                            <ul class="ma-ul2">
+                                <li class="ma-li2">
+                                    <h4 class="ma-li-genre">Rap Music</h4>
+                                    <div class="ma-li-div">
+                                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"    clip-rule="evenodd"
+                                                    d="M2.50782 10.4856C2.55448 10.435 2.61086 10.3943 2.67358 10.3661C2.73631 10.3378 2.80408 10.3225 2.87285 10.3211H14.3419C14.3905 10.3218 14.4377 10.3365 14.4781 10.3635C14.5185 10.3904 14.5502 10.4285 14.5695 10.4731C14.5888 10.5177 14.5948 10.5669 14.5868 10.6149C14.5788 10.6628 14.5571 10.7074 14.5244 10.7433L12.0934 13.4468C12.0467 13.4974 11.9903 13.5381 11.9276 13.5664C11.8649 13.5946 11.7971 13.6099 11.7283 13.6113H0.251971C0.203444 13.6106 0.156148 13.5959 0.115772 13.569C0.075396 13.542 0.0436591 13.5039 0.0243789 13.4593C0.0050987 13.4147 -0.00090373 13.3655 0.00709359 13.3175C0.0150909 13.2696 0.0367474 13.225 0.0694582 13.1891L2.50782 10.4856ZM14.5354 8.24459C14.5681 8.28049 14.5898 8.3251 14.5978 8.37304C14.6057 8.42098 14.5997 8.47022 14.5805 8.51482C14.5612 8.55943 14.5295 8.5975 14.4891 8.62447C14.4487 8.65144 14.4014 8.66615 14.3529 8.66684L2.88015 8.67597C2.81138 8.67457 2.74361 8.65927 2.68088 8.631C2.61816 8.60273 2.56178 8.56207 2.51512 8.51146L0.0658079 5.81712C0.0330972 5.78122 0.0114407 5.73661 0.00344335 5.68867C-0.00455397 5.64073 0.00144846 5.59149 0.0207287 5.54689C0.0400089 5.50228 0.0717457 5.46421 0.112122 5.43724C0.152498 5.41027 0.199794 5.39556 0.24832 5.39488L11.721 5.38574C11.7898 5.38714 11.8576 5.40244 11.9203 5.43071C11.983 5.45898 12.0394 5.49964 12.0861 5.55025L14.5354 8.24459ZM2.50782 0.61489C2.55448 0.564278 2.61086 0.52362 2.67358 0.495351C2.73631 0.467083 2.80408 0.451787 2.87285 0.450378L14.3492 0.459518C14.3978 0.460202 14.445 0.474914 14.4854 0.501882C14.5258 0.52885 14.5575 0.566927 14.5768 0.611532C14.5961 0.656137 14.6021 0.705371 14.5941 0.753312C14.5861 0.801253 14.5644 0.845859 14.5317 0.881765L12.0934 3.57611C12.0467 3.62672 11.9903 3.66738 11.9276 3.69564C11.8649 3.72391 11.7971 3.73921 11.7283 3.74062H0.251971C0.203444 3.73993 0.156148 3.72522 0.115772 3.69825C0.075396 3.67129 0.0436591 3.63321 0.0243789 3.5886C0.0050987 3.544 -0.00090373 3.49476 0.00709359 3.44682C0.0150909 3.39888 0.0367474 3.35428 0.0694582 3.31837L2.50782 0.61489Z" fill="white"/>
+                                        </svg>
+                                        <p class="ma-li-p">0.3234</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <svg class="ma-svg" width="198" height="248" viewBox="0 0 198 248" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.5 1.0351H1V247.411H197V185.817" stroke="white" />
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ma-right">
+                    <h2 class="ma-h">Music NFT Marketplace</h2>
+                    <p class="ma-p">Create your first music NFTs with NFT market for musicians. Create music and music videos just under the $1, the
+                    platform works with BSC blockchain and supports mp4. With AirNFTs, you are getting the control over your NFTs, no middle
+                    man cutting your sales. Create, Buy, Sell and Earn with your music NFTs.</p>
+                    <button type="button" class="ma-btn">
+                        <a href="market.html" target="_blank">
+                            <div class="ma-btn-div">
+                                <span class="ma-btn-text">Explore Marketplace</span>
+                                <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13.5L7 7.5L1 1.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="gradient gradient-8"></div>
+        </section>
+
+        <!-- #endregion -->
+
+         <!-- #region community -->
+
+        <section class="community container" id="faq">
+            <h2 class="co-h">Engage your<br>
+            Fans with community</h2>
+            <ul class="co-ul">
+                <li class="co-li">
+                    <h3 class="co-li-h">/</h3>
+                    <p class="co-li-p">Artists themselves become a platform. NFTs allow artists, especially upcoming ones, to create an ecosystem that allows genuine fans to buy into their market.</p>
+                </li>
+                <li class="co-li">
+                    <h3 class="co-li-h">//</h3>
+                    <p class="co-li-p">NFT gives all the power to creators. Any upcoming artist can do their stuff on-chain, making them more independent and freeing them from unfavorable deals from record labels.</p>
+                </li>
+                <li class="co-li">
+                    <h3 class="co-li-h">///</h3>
+                    <p class="co-li-p">A positive NFT-fueled change in the music market can upstage crypto adoption at large.</p>
+                </li>
+                <li class="co-li">
+                    <div class="co-last">
+                        <h3 class="co-li-h">////</h3>
+                        <p class="co-li-p">Learn more about Music NFT on our FAQ page.</p>
+                    </div>
+                    <button type="button" class="co-btn"><a href="exit.html" target="_blank">FAQ</a></button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- #endregion -->
+
+        <!-- #region discover -->
+
+        <section class="discover container" id="discover">
+            <div class="di-top">
+                <h2 class="di-h">Discover<br> Music NFT</h2>
+                <div class="di-top-div">
+                    <p class="di-p">Music Genre</p>
+                    <ul class="di-ul">
+                        <li class="di-li"><button type="button" class="di-genre-btn" id="first-btn">Heart & Soul</button></li>
+                        <li class="di-li"><button type="button" class="di-genre-btn">Rap</button></li>
+                        <li class="di-li"><button type="button" class="di-genre-btn">Jazz</button></li>
+                        <li class="di-li"><button type="button" class="di-genre-btn">R&B</button></li>
+                        <li class="di-li">
+                            <button type="button" class="di-genre-btn" id="di-genre-btn">More
+                                <svg class="di-genre-btn-svg" width="9" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 13.5L7 7.5L1 1.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gradient gradient-9"></div>
+            </div>
+            <div class="di-bottom">
+                <div class="di-dropdown-parent">
+                    <div class="di-dropdown hidden" id="dropdown">
+                        <ul class="di-dropdown-list">
+                            <li class="di-dropdown-li">Alternative</li>
+                            <li class="di-dropdown-li">Blues</li>
+                            <li class="di-dropdown-li">Chillwave</li>
+                            <li class="di-dropdown-li">Country</li>
+                            <li class="di-dropdown-li">Electronic</li>
+                            <li class="di-dropdown-li">Experimental</li>
+                            <li class="di-dropdown-li">Funk</li>
+                            <li class="di-dropdown-li">Indie</li>
+                            <li class="di-dropdown-li">Lo-Fi</li>
+                            <li class="di-dropdown-li">Metal</li>
+                            <li class="di-dropdown-li">Neo Soul</li>
+                            <li class="di-dropdown-li">Pop</li>
+                            <li class="di-dropdown-li">Punk</li>
+                            <li class="di-dropdown-li">Rock & Roll</li>
+                            <li class="di-dropdown-li">Shoegaze</li>
+                            <li class="di-dropdown-li">Synthwave</li>
+                            <li class="di-dropdown-li">Tech House</li>
+                            <li class="di-dropdown-li">Trance</li>
+                            <li class="di-dropdown-li">Trap Music</li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="di-cards">
+                    <li class="di-item">
+                        <img src="./images/nft-1.png" alt="music nft" class="di-img">
+                        <h4 class="di-genre">Heart & Soul</h4>
+                        <div class="di-cards-price">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07486 12.5112C4.13309 12.4481 4.20345 12.3975 4.28173 12.3622C4.36001 12.327 4.4446 12.308 4.53042 12.3062H18.8442C18.9048 12.3071 18.9638 12.3254 19.0142 12.359C19.0646 12.3926 19.1042 12.44 19.1283 12.4956C19.1523 12.5512 19.1598 12.6126 19.1498 12.6723C19.1399 12.732 19.1128 12.7876 19.072 12.8324L16.038 16.2013C15.9797 16.2643 15.9094 16.315 15.8311 16.3502C15.7528 16.3855 15.6682 16.4045 15.5824 16.4063H1.25948C1.19891 16.4054 1.13989 16.3871 1.08949 16.3535C1.0391 16.3199 0.999495 16.2724 0.975433 16.2168C0.951371 16.1613 0.943879 16.0999 0.95386 16.0402C0.963841 15.9804 0.990869 15.9248 1.03169 15.8801L4.07486 12.5112ZM19.0857 9.7186C19.1265 9.76334 19.1535 9.81893 19.1635 9.87867C19.1735 9.93841 19.166 9.99976 19.1419 10.0553C19.1179 10.1109 19.0783 10.1584 19.0279 10.192C18.9775 10.2256 18.9185 10.2439 18.8579 10.2448L4.53953 10.2562C4.45371 10.2544 4.36912 10.2353 4.29084 10.2001C4.21256 10.1649 4.1422 10.1142 4.08397 10.0512L1.02714 6.69366C0.986314 6.64891 0.959286 6.59333 0.949305 6.53359C0.939324 6.47385 0.946815 6.41249 0.970877 6.35691C0.99494 6.30133 1.03455 6.25388 1.08494 6.22027C1.13533 6.18667 1.19436 6.16833 1.25492 6.16748L15.5733 6.15609C15.6591 6.15785 15.7437 6.17691 15.822 6.21213C15.9003 6.24736 15.9706 6.29802 16.0288 6.36109L19.0857 9.7186ZM4.07486 0.210985C4.13309 0.147915 4.20345 0.0972497 4.28173 0.0620237C4.36001 0.0267976 4.4446 0.00773618 4.53042 0.00598145L18.8533 0.0173705C18.9139 0.0182235 18.9729 0.0365554 19.0233 0.0701613C19.0737 0.103767 19.1133 0.151216 19.1374 0.2068C19.1614 0.262384 19.1689 0.323736 19.159 0.383477C19.149 0.443218 19.1219 0.498803 19.0811 0.543547L16.038 3.90105C15.9797 3.96412 15.9094 4.01479 15.8311 4.05001C15.7528 4.08524 15.6682 4.1043 15.5824 4.10605H1.25948C1.19891 4.1052 1.13989 4.08687 1.08949 4.05326C1.0391 4.01966 0.999495 3.97221 0.975433 3.91662C0.951371 3.86104 0.943879 3.79969 0.95386 3.73995C0.963841 3.68021 0.990869 3.62462 1.03169 3.57988L4.07486 0.210985Z" fill="white" />
+                            </svg>
+                            <p class="di-cards-num">0.3234</p>
+                            <p class="di-cards-tokens">16 tokens</p>
+                        </div>
+                        <button type="button" class="di-cards-btn">
+                            <span class="di-cards-text"><span class="di-play-now">Play Now</span>
+                            <svg width="14" height="18" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.53137 1.90942L14.2942 10.1141L1.53137 18.3188V1.90942Z" stroke="white" stroke-width="2.18792" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </span>
+                        </button>
+                        <button type="button" class="di-nft-btn">Buy NFT</button>
+                        <svg class="ma-svg" width="380" height="457" viewBox="0 0 380 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3043 0.91272H1V456H378.416V291.359" stroke="white" stroke-width="1.49803"/>
+                        </svg>
+                    </li>
+                    <li class="di-item">
+                        <img src="./images/nft-2.png" alt="music nft" class="di-img">
+                        <h4 class="di-genre">Heart & Soul</h4>
+                        <div class="di-cards-price">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07486 12.5112C4.13309 12.4481 4.20345 12.3975 4.28173 12.3622C4.36001 12.327 4.4446 12.308 4.53042 12.3062H18.8442C18.9048 12.3071 18.9638 12.3254 19.0142 12.359C19.0646 12.3926 19.1042 12.44 19.1283 12.4956C19.1523 12.5512 19.1598 12.6126 19.1498 12.6723C19.1399 12.732 19.1128 12.7876 19.072 12.8324L16.038 16.2013C15.9797 16.2643 15.9094 16.315 15.8311 16.3502C15.7528 16.3855 15.6682 16.4045 15.5824 16.4063H1.25948C1.19891 16.4054 1.13989 16.3871 1.08949 16.3535C1.0391 16.3199 0.999495 16.2724 0.975433 16.2168C0.951371 16.1613 0.943879 16.0999 0.95386 16.0402C0.963841 15.9804 0.990869 15.9248 1.03169 15.8801L4.07486 12.5112ZM19.0857 9.7186C19.1265 9.76334 19.1535 9.81893 19.1635 9.87867C19.1735 9.93841 19.166 9.99976 19.1419 10.0553C19.1179 10.1109 19.0783 10.1584 19.0279 10.192C18.9775 10.2256 18.9185 10.2439 18.8579 10.2448L4.53953 10.2562C4.45371 10.2544 4.36912 10.2353 4.29084 10.2001C4.21256 10.1649 4.1422 10.1142 4.08397 10.0512L1.02714 6.69366C0.986314 6.64891 0.959286 6.59333 0.949305 6.53359C0.939324 6.47385 0.946815 6.41249 0.970877 6.35691C0.99494 6.30133 1.03455 6.25388 1.08494 6.22027C1.13533 6.18667 1.19436 6.16833 1.25492 6.16748L15.5733 6.15609C15.6591 6.15785 15.7437 6.17691 15.822 6.21213C15.9003 6.24736 15.9706 6.29802 16.0288 6.36109L19.0857 9.7186ZM4.07486 0.210985C4.13309 0.147915 4.20345 0.0972497 4.28173 0.0620237C4.36001 0.0267976 4.4446 0.00773618 4.53042 0.00598145L18.8533 0.0173705C18.9139 0.0182235 18.9729 0.0365554 19.0233 0.0701613C19.0737 0.103767 19.1133 0.151216 19.1374 0.2068C19.1614 0.262384 19.1689 0.323736 19.159 0.383477C19.149 0.443218 19.1219 0.498803 19.0811 0.543547L16.038 3.90105C15.9797 3.96412 15.9094 4.01479 15.8311 4.05001C15.7528 4.08524 15.6682 4.1043 15.5824 4.10605H1.25948C1.19891 4.1052 1.13989 4.08687 1.08949 4.05326C1.0391 4.01966 0.999495 3.97221 0.975433 3.91662C0.951371 3.86104 0.943879 3.79969 0.95386 3.73995C0.963841 3.68021 0.990869 3.62462 1.03169 3.57988L4.07486 0.210985Z" fill="white" />
+                            </svg>
+                            <p class="di-cards-num">0.3234</p>
+                            <p class="di-cards-tokens">16 tokens</p>
+                        </div>
+                        <button type="button" class="di-cards-btn">
+                            <span class="di-cards-text"><span class="di-play-now">Play Now</span>
+                            <svg width="14" height="18" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.53137 1.90942L14.2942 10.1141L1.53137 18.3188V1.90942Z" stroke="white" stroke-width="2.18792" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </span>
+                        </button>
+                        <button type="button" class="di-nft-btn">Buy NFT</button>
+                        <svg class="ma-svg" width="380" height="457" viewBox="0 0 380 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3043 0.91272H1V456H378.416V291.359" stroke="white" stroke-width="1.49803"/>
+                        </svg>
+                    </li>
+                    <li class="di-item">
+                        <img src="./images/nft-3.png" alt="music nft" class="di-img">
+                        <h4 class="di-genre">Heart & Soul</h4>
+                        <div class="di-cards-price">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07486 12.5112C4.13309 12.4481 4.20345 12.3975 4.28173 12.3622C4.36001 12.327 4.4446 12.308 4.53042 12.3062H18.8442C18.9048 12.3071 18.9638 12.3254 19.0142 12.359C19.0646 12.3926 19.1042 12.44 19.1283 12.4956C19.1523 12.5512 19.1598 12.6126 19.1498 12.6723C19.1399 12.732 19.1128 12.7876 19.072 12.8324L16.038 16.2013C15.9797 16.2643 15.9094 16.315 15.8311 16.3502C15.7528 16.3855 15.6682 16.4045 15.5824 16.4063H1.25948C1.19891 16.4054 1.13989 16.3871 1.08949 16.3535C1.0391 16.3199 0.999495 16.2724 0.975433 16.2168C0.951371 16.1613 0.943879 16.0999 0.95386 16.0402C0.963841 15.9804 0.990869 15.9248 1.03169 15.8801L4.07486 12.5112ZM19.0857 9.7186C19.1265 9.76334 19.1535 9.81893 19.1635 9.87867C19.1735 9.93841 19.166 9.99976 19.1419 10.0553C19.1179 10.1109 19.0783 10.1584 19.0279 10.192C18.9775 10.2256 18.9185 10.2439 18.8579 10.2448L4.53953 10.2562C4.45371 10.2544 4.36912 10.2353 4.29084 10.2001C4.21256 10.1649 4.1422 10.1142 4.08397 10.0512L1.02714 6.69366C0.986314 6.64891 0.959286 6.59333 0.949305 6.53359C0.939324 6.47385 0.946815 6.41249 0.970877 6.35691C0.99494 6.30133 1.03455 6.25388 1.08494 6.22027C1.13533 6.18667 1.19436 6.16833 1.25492 6.16748L15.5733 6.15609C15.6591 6.15785 15.7437 6.17691 15.822 6.21213C15.9003 6.24736 15.9706 6.29802 16.0288 6.36109L19.0857 9.7186ZM4.07486 0.210985C4.13309 0.147915 4.20345 0.0972497 4.28173 0.0620237C4.36001 0.0267976 4.4446 0.00773618 4.53042 0.00598145L18.8533 0.0173705C18.9139 0.0182235 18.9729 0.0365554 19.0233 0.0701613C19.0737 0.103767 19.1133 0.151216 19.1374 0.2068C19.1614 0.262384 19.1689 0.323736 19.159 0.383477C19.149 0.443218 19.1219 0.498803 19.0811 0.543547L16.038 3.90105C15.9797 3.96412 15.9094 4.01479 15.8311 4.05001C15.7528 4.08524 15.6682 4.1043 15.5824 4.10605H1.25948C1.19891 4.1052 1.13989 4.08687 1.08949 4.05326C1.0391 4.01966 0.999495 3.97221 0.975433 3.91662C0.951371 3.86104 0.943879 3.79969 0.95386 3.73995C0.963841 3.68021 0.990869 3.62462 1.03169 3.57988L4.07486 0.210985Z" fill="white" />
+                            </svg>
+                            <p class="di-cards-num">0.3234</p>
+                            <p class="di-cards-tokens">16 tokens</p>
+                        </div>
+                        <button type="button" class="di-cards-btn">
+                            <span class="di-cards-text"><span class="di-play-now">Play Now</span>
+                            <svg width="14" height="18" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.53137 1.90942L14.2942 10.1141L1.53137 18.3188V1.90942Z" stroke="white" stroke-width="2.18792" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </span>
+                        </button>
+                        <button type="button" class="di-nft-btn">Buy NFT</button>
+                        <svg class="ma-svg" width="380" height="457" viewBox="0 0 380 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3043 0.91272H1V456H378.416V291.359" stroke="white" stroke-width="1.49803"/>
+                        </svg>
+                    </li>
+                    <li class="di-item">
+                        <img src="./images/nft-4.png" alt="music nft" class="di-img">
+                        <h4 class="di-genre">Heart & Soul</h4>
+                        <div class="di-cards-price">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07486 12.5112C4.13309 12.4481 4.20345 12.3975 4.28173 12.3622C4.36001 12.327 4.4446 12.308 4.53042 12.3062H18.8442C18.9048 12.3071 18.9638 12.3254 19.0142 12.359C19.0646 12.3926 19.1042 12.44 19.1283 12.4956C19.1523 12.5512 19.1598 12.6126 19.1498 12.6723C19.1399 12.732 19.1128 12.7876 19.072 12.8324L16.038 16.2013C15.9797 16.2643 15.9094 16.315 15.8311 16.3502C15.7528 16.3855 15.6682 16.4045 15.5824 16.4063H1.25948C1.19891 16.4054 1.13989 16.3871 1.08949 16.3535C1.0391 16.3199 0.999495 16.2724 0.975433 16.2168C0.951371 16.1613 0.943879 16.0999 0.95386 16.0402C0.963841 15.9804 0.990869 15.9248 1.03169 15.8801L4.07486 12.5112ZM19.0857 9.7186C19.1265 9.76334 19.1535 9.81893 19.1635 9.87867C19.1735 9.93841 19.166 9.99976 19.1419 10.0553C19.1179 10.1109 19.0783 10.1584 19.0279 10.192C18.9775 10.2256 18.9185 10.2439 18.8579 10.2448L4.53953 10.2562C4.45371 10.2544 4.36912 10.2353 4.29084 10.2001C4.21256 10.1649 4.1422 10.1142 4.08397 10.0512L1.02714 6.69366C0.986314 6.64891 0.959286 6.59333 0.949305 6.53359C0.939324 6.47385 0.946815 6.41249 0.970877 6.35691C0.99494 6.30133 1.03455 6.25388 1.08494 6.22027C1.13533 6.18667 1.19436 6.16833 1.25492 6.16748L15.5733 6.15609C15.6591 6.15785 15.7437 6.17691 15.822 6.21213C15.9003 6.24736 15.9706 6.29802 16.0288 6.36109L19.0857 9.7186ZM4.07486 0.210985C4.13309 0.147915 4.20345 0.0972497 4.28173 0.0620237C4.36001 0.0267976 4.4446 0.00773618 4.53042 0.00598145L18.8533 0.0173705C18.9139 0.0182235 18.9729 0.0365554 19.0233 0.0701613C19.0737 0.103767 19.1133 0.151216 19.1374 0.2068C19.1614 0.262384 19.1689 0.323736 19.159 0.383477C19.149 0.443218 19.1219 0.498803 19.0811 0.543547L16.038 3.90105C15.9797 3.96412 15.9094 4.01479 15.8311 4.05001C15.7528 4.08524 15.6682 4.1043 15.5824 4.10605H1.25948C1.19891 4.1052 1.13989 4.08687 1.08949 4.05326C1.0391 4.01966 0.999495 3.97221 0.975433 3.91662C0.951371 3.86104 0.943879 3.79969 0.95386 3.73995C0.963841 3.68021 0.990869 3.62462 1.03169 3.57988L4.07486 0.210985Z" fill="white" />
+                            </svg>
+                            <p class="di-cards-num">0.3234</p>
+                            <p class="di-cards-tokens">16 tokens</p>
+                        </div>
+                        <button type="button" class="di-cards-btn">
+                            <span class="di-cards-text"><span class="di-play-now">Play Now</span>
+                            <svg width="14" height="18" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.53137 1.90942L14.2942 10.1141L1.53137 18.3188V1.90942Z" stroke="white" stroke-width="2.18792" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </span>
+                        </button>
+                        <button type="button" class="di-nft-btn">Buy NFT</button>
+                        <svg class="ma-svg" width="380" height="457" viewBox="0 0 380 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3043 0.91272H1V456H378.416V291.359" stroke="white" stroke-width="1.49803"/>
+                        </svg>
+                    </li>
+                    <li class="di-item">
+                        <img src="./images/nft-5.png" alt="music nft" class="di-img">
+                        <h4 class="di-genre">Heart & Soul</h4>
+                        <div class="di-cards-price">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07486 12.5112C4.13309 12.4481 4.20345 12.3975 4.28173 12.3622C4.36001 12.327 4.4446 12.308 4.53042 12.3062H18.8442C18.9048 12.3071 18.9638 12.3254 19.0142 12.359C19.0646 12.3926 19.1042 12.44 19.1283 12.4956C19.1523 12.5512 19.1598 12.6126 19.1498 12.6723C19.1399 12.732 19.1128 12.7876 19.072 12.8324L16.038 16.2013C15.9797 16.2643 15.9094 16.315 15.8311 16.3502C15.7528 16.3855 15.6682 16.4045 15.5824 16.4063H1.25948C1.19891 16.4054 1.13989 16.3871 1.08949 16.3535C1.0391 16.3199 0.999495 16.2724 0.975433 16.2168C0.951371 16.1613 0.943879 16.0999 0.95386 16.0402C0.963841 15.9804 0.990869 15.9248 1.03169 15.8801L4.07486 12.5112ZM19.0857 9.7186C19.1265 9.76334 19.1535 9.81893 19.1635 9.87867C19.1735 9.93841 19.166 9.99976 19.1419 10.0553C19.1179 10.1109 19.0783 10.1584 19.0279 10.192C18.9775 10.2256 18.9185 10.2439 18.8579 10.2448L4.53953 10.2562C4.45371 10.2544 4.36912 10.2353 4.29084 10.2001C4.21256 10.1649 4.1422 10.1142 4.08397 10.0512L1.02714 6.69366C0.986314 6.64891 0.959286 6.59333 0.949305 6.53359C0.939324 6.47385 0.946815 6.41249 0.970877 6.35691C0.99494 6.30133 1.03455 6.25388 1.08494 6.22027C1.13533 6.18667 1.19436 6.16833 1.25492 6.16748L15.5733 6.15609C15.6591 6.15785 15.7437 6.17691 15.822 6.21213C15.9003 6.24736 15.9706 6.29802 16.0288 6.36109L19.0857 9.7186ZM4.07486 0.210985C4.13309 0.147915 4.20345 0.0972497 4.28173 0.0620237C4.36001 0.0267976 4.4446 0.00773618 4.53042 0.00598145L18.8533 0.0173705C18.9139 0.0182235 18.9729 0.0365554 19.0233 0.0701613C19.0737 0.103767 19.1133 0.151216 19.1374 0.2068C19.1614 0.262384 19.1689 0.323736 19.159 0.383477C19.149 0.443218 19.1219 0.498803 19.0811 0.543547L16.038 3.90105C15.9797 3.96412 15.9094 4.01479 15.8311 4.05001C15.7528 4.08524 15.6682 4.1043 15.5824 4.10605H1.25948C1.19891 4.1052 1.13989 4.08687 1.08949 4.05326C1.0391 4.01966 0.999495 3.97221 0.975433 3.91662C0.951371 3.86104 0.943879 3.79969 0.95386 3.73995C0.963841 3.68021 0.990869 3.62462 1.03169 3.57988L4.07486 0.210985Z" fill="white" />
+                            </svg>
+                            <p class="di-cards-num">0.3234</p>
+                            <p class="di-cards-tokens">16 tokens</p>
+                        </div>
+                        <button type="button" class="di-cards-btn">
+                            <span class="di-cards-text"><span class="di-play-now">Play Now</span>
+                            <svg width="14" height="18" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.53137 1.90942L14.2942 10.1141L1.53137 18.3188V1.90942Z" stroke="white" stroke-width="2.18792" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </span>
+                        </button>
+                        <button type="button" class="di-nft-btn">Buy NFT</button>
+                        <svg class="ma-svg" width="380" height="457" viewBox="0 0 380 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3043 0.91272H1V456H378.416V291.359" stroke="white" stroke-width="1.49803"/>
+                        </svg>
+                    </li>
+                    <li class="di-item">
+                        <img src="./images/nft-6.png" alt="music nft" class="di-img">
+                        <h4 class="di-genre">Heart & Soul</h4>
+                        <div class="di-cards-price">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07486 12.5112C4.13309 12.4481 4.20345 12.3975 4.28173 12.3622C4.36001 12.327 4.4446 12.308 4.53042 12.3062H18.8442C18.9048 12.3071 18.9638 12.3254 19.0142 12.359C19.0646 12.3926 19.1042 12.44 19.1283 12.4956C19.1523 12.5512 19.1598 12.6126 19.1498 12.6723C19.1399 12.732 19.1128 12.7876 19.072 12.8324L16.038 16.2013C15.9797 16.2643 15.9094 16.315 15.8311 16.3502C15.7528 16.3855 15.6682 16.4045 15.5824 16.4063H1.25948C1.19891 16.4054 1.13989 16.3871 1.08949 16.3535C1.0391 16.3199 0.999495 16.2724 0.975433 16.2168C0.951371 16.1613 0.943879 16.0999 0.95386 16.0402C0.963841 15.9804 0.990869 15.9248 1.03169 15.8801L4.07486 12.5112ZM19.0857 9.7186C19.1265 9.76334 19.1535 9.81893 19.1635 9.87867C19.1735 9.93841 19.166 9.99976 19.1419 10.0553C19.1179 10.1109 19.0783 10.1584 19.0279 10.192C18.9775 10.2256 18.9185 10.2439 18.8579 10.2448L4.53953 10.2562C4.45371 10.2544 4.36912 10.2353 4.29084 10.2001C4.21256 10.1649 4.1422 10.1142 4.08397 10.0512L1.02714 6.69366C0.986314 6.64891 0.959286 6.59333 0.949305 6.53359C0.939324 6.47385 0.946815 6.41249 0.970877 6.35691C0.99494 6.30133 1.03455 6.25388 1.08494 6.22027C1.13533 6.18667 1.19436 6.16833 1.25492 6.16748L15.5733 6.15609C15.6591 6.15785 15.7437 6.17691 15.822 6.21213C15.9003 6.24736 15.9706 6.29802 16.0288 6.36109L19.0857 9.7186ZM4.07486 0.210985C4.13309 0.147915 4.20345 0.0972497 4.28173 0.0620237C4.36001 0.0267976 4.4446 0.00773618 4.53042 0.00598145L18.8533 0.0173705C18.9139 0.0182235 18.9729 0.0365554 19.0233 0.0701613C19.0737 0.103767 19.1133 0.151216 19.1374 0.2068C19.1614 0.262384 19.1689 0.323736 19.159 0.383477C19.149 0.443218 19.1219 0.498803 19.0811 0.543547L16.038 3.90105C15.9797 3.96412 15.9094 4.01479 15.8311 4.05001C15.7528 4.08524 15.6682 4.1043 15.5824 4.10605H1.25948C1.19891 4.1052 1.13989 4.08687 1.08949 4.05326C1.0391 4.01966 0.999495 3.97221 0.975433 3.91662C0.951371 3.86104 0.943879 3.79969 0.95386 3.73995C0.963841 3.68021 0.990869 3.62462 1.03169 3.57988L4.07486 0.210985Z" fill="white" />
+                            </svg>
+                            <p class="di-cards-num">0.3234</p>
+                            <p class="di-cards-tokens">16 tokens</p>
+                        </div>
+                        <button type="button" class="di-cards-btn">
+                            <span class="di-cards-text"><span class="di-play-now">Play Now</span>
+                            <svg width="14" height="18" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.53137 1.90942L14.2942 10.1141L1.53137 18.3188V1.90942Z" stroke="white" stroke-width="2.18792" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </span>
+                        </button>
+                        <button type="button" class="di-nft-btn">Buy NFT</button>
+                        <svg class="ma-svg" width="380" height="457" viewBox="0 0 380 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3043 0.91272H1V456H378.416V291.359" stroke="white" stroke-width="1.49803"/>
+                        </svg>
+                    </li>
+                    <li class="di-item">
+                        <img src="./images/nft-7.png" alt="music nft" class="di-img">
+                        <h4 class="di-genre">Heart & Soul</h4>
+                        <div class="di-cards-price">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07486 12.5112C4.13309 12.4481 4.20345 12.3975 4.28173 12.3622C4.36001 12.327 4.4446 12.308 4.53042 12.3062H18.8442C18.9048 12.3071 18.9638 12.3254 19.0142 12.359C19.0646 12.3926 19.1042 12.44 19.1283 12.4956C19.1523 12.5512 19.1598 12.6126 19.1498 12.6723C19.1399 12.732 19.1128 12.7876 19.072 12.8324L16.038 16.2013C15.9797 16.2643 15.9094 16.315 15.8311 16.3502C15.7528 16.3855 15.6682 16.4045 15.5824 16.4063H1.25948C1.19891 16.4054 1.13989 16.3871 1.08949 16.3535C1.0391 16.3199 0.999495 16.2724 0.975433 16.2168C0.951371 16.1613 0.943879 16.0999 0.95386 16.0402C0.963841 15.9804 0.990869 15.9248 1.03169 15.8801L4.07486 12.5112ZM19.0857 9.7186C19.1265 9.76334 19.1535 9.81893 19.1635 9.87867C19.1735 9.93841 19.166 9.99976 19.1419 10.0553C19.1179 10.1109 19.0783 10.1584 19.0279 10.192C18.9775 10.2256 18.9185 10.2439 18.8579 10.2448L4.53953 10.2562C4.45371 10.2544 4.36912 10.2353 4.29084 10.2001C4.21256 10.1649 4.1422 10.1142 4.08397 10.0512L1.02714 6.69366C0.986314 6.64891 0.959286 6.59333 0.949305 6.53359C0.939324 6.47385 0.946815 6.41249 0.970877 6.35691C0.99494 6.30133 1.03455 6.25388 1.08494 6.22027C1.13533 6.18667 1.19436 6.16833 1.25492 6.16748L15.5733 6.15609C15.6591 6.15785 15.7437 6.17691 15.822 6.21213C15.9003 6.24736 15.9706 6.29802 16.0288 6.36109L19.0857 9.7186ZM4.07486 0.210985C4.13309 0.147915 4.20345 0.0972497 4.28173 0.0620237C4.36001 0.0267976 4.4446 0.00773618 4.53042 0.00598145L18.8533 0.0173705C18.9139 0.0182235 18.9729 0.0365554 19.0233 0.0701613C19.0737 0.103767 19.1133 0.151216 19.1374 0.2068C19.1614 0.262384 19.1689 0.323736 19.159 0.383477C19.149 0.443218 19.1219 0.498803 19.0811 0.543547L16.038 3.90105C15.9797 3.96412 15.9094 4.01479 15.8311 4.05001C15.7528 4.08524 15.6682 4.1043 15.5824 4.10605H1.25948C1.19891 4.1052 1.13989 4.08687 1.08949 4.05326C1.0391 4.01966 0.999495 3.97221 0.975433 3.91662C0.951371 3.86104 0.943879 3.79969 0.95386 3.73995C0.963841 3.68021 0.990869 3.62462 1.03169 3.57988L4.07486 0.210985Z" fill="white" />
+                            </svg>
+                            <p class="di-cards-num">0.3234</p>
+                            <p class="di-cards-tokens">16 tokens</p>
+                        </div>
+                        <button type="button" class="di-cards-btn">
+                            <span class="di-cards-text"><span class="di-play-now">Play Now</span>
+                            <svg width="14" height="18" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.53137 1.90942L14.2942 10.1141L1.53137 18.3188V1.90942Z" stroke="white" stroke-width="2.18792" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </span>
+                        </button>
+                        <button type="button" class="di-nft-btn">Buy NFT</button>
+                        <svg class="ma-svg" width="380" height="457" viewBox="0 0 380 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3043 0.91272H1V456H378.416V291.359" stroke="white" stroke-width="1.49803"/>
+                        </svg>
+                    </li>
+                    <li class="di-item">
+                        <img src="./images/nft-8.png" alt="music nft" class="di-img">
+                        <h4 class="di-genre">Heart & Soul</h4>
+                        <div class="di-cards-price">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07486 12.5112C4.13309 12.4481 4.20345 12.3975 4.28173 12.3622C4.36001 12.327 4.4446 12.308 4.53042 12.3062H18.8442C18.9048 12.3071 18.9638 12.3254 19.0142 12.359C19.0646 12.3926 19.1042 12.44 19.1283 12.4956C19.1523 12.5512 19.1598 12.6126 19.1498 12.6723C19.1399 12.732 19.1128 12.7876 19.072 12.8324L16.038 16.2013C15.9797 16.2643 15.9094 16.315 15.8311 16.3502C15.7528 16.3855 15.6682 16.4045 15.5824 16.4063H1.25948C1.19891 16.4054 1.13989 16.3871 1.08949 16.3535C1.0391 16.3199 0.999495 16.2724 0.975433 16.2168C0.951371 16.1613 0.943879 16.0999 0.95386 16.0402C0.963841 15.9804 0.990869 15.9248 1.03169 15.8801L4.07486 12.5112ZM19.0857 9.7186C19.1265 9.76334 19.1535 9.81893 19.1635 9.87867C19.1735 9.93841 19.166 9.99976 19.1419 10.0553C19.1179 10.1109 19.0783 10.1584 19.0279 10.192C18.9775 10.2256 18.9185 10.2439 18.8579 10.2448L4.53953 10.2562C4.45371 10.2544 4.36912 10.2353 4.29084 10.2001C4.21256 10.1649 4.1422 10.1142 4.08397 10.0512L1.02714 6.69366C0.986314 6.64891 0.959286 6.59333 0.949305 6.53359C0.939324 6.47385 0.946815 6.41249 0.970877 6.35691C0.99494 6.30133 1.03455 6.25388 1.08494 6.22027C1.13533 6.18667 1.19436 6.16833 1.25492 6.16748L15.5733 6.15609C15.6591 6.15785 15.7437 6.17691 15.822 6.21213C15.9003 6.24736 15.9706 6.29802 16.0288 6.36109L19.0857 9.7186ZM4.07486 0.210985C4.13309 0.147915 4.20345 0.0972497 4.28173 0.0620237C4.36001 0.0267976 4.4446 0.00773618 4.53042 0.00598145L18.8533 0.0173705C18.9139 0.0182235 18.9729 0.0365554 19.0233 0.0701613C19.0737 0.103767 19.1133 0.151216 19.1374 0.2068C19.1614 0.262384 19.1689 0.323736 19.159 0.383477C19.149 0.443218 19.1219 0.498803 19.0811 0.543547L16.038 3.90105C15.9797 3.96412 15.9094 4.01479 15.8311 4.05001C15.7528 4.08524 15.6682 4.1043 15.5824 4.10605H1.25948C1.19891 4.1052 1.13989 4.08687 1.08949 4.05326C1.0391 4.01966 0.999495 3.97221 0.975433 3.91662C0.951371 3.86104 0.943879 3.79969 0.95386 3.73995C0.963841 3.68021 0.990869 3.62462 1.03169 3.57988L4.07486 0.210985Z" fill="white" />
+                            </svg>
+                            <p class="di-cards-num">0.3234</p>
+                            <p class="di-cards-tokens">16 tokens</p>
+                        </div>
+                        <button type="button" class="di-cards-btn">
+                            <span class="di-cards-text"><span class="di-play-now">Play Now</span>
+                            <svg width="14" height="18" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.53137 1.90942L14.2942 10.1141L1.53137 18.3188V1.90942Z" stroke="white" stroke-width="2.18792" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </span>
+                        </button>
+                        <button type="button" class="di-nft-btn">Buy NFT</button>
+                        <svg class="ma-svg" width="380" height="457" viewBox="0 0 380 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3043 0.91272H1V456H378.416V291.359" stroke="white" stroke-width="1.49803"/>
+                        </svg>
+                    </li>
+                    <li class="di-item">
+                        <img src="./images/nft-9.png" alt="music nft" class="di-img">
+                        <h4 class="di-genre">Heart & Soul</h4>
+                        <div class="di-cards-price">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07486 12.5112C4.13309 12.4481 4.20345 12.3975 4.28173 12.3622C4.36001 12.327 4.4446 12.308 4.53042 12.3062H18.8442C18.9048 12.3071 18.9638 12.3254 19.0142 12.359C19.0646 12.3926 19.1042 12.44 19.1283 12.4956C19.1523 12.5512 19.1598 12.6126 19.1498 12.6723C19.1399 12.732 19.1128 12.7876 19.072 12.8324L16.038 16.2013C15.9797 16.2643 15.9094 16.315 15.8311 16.3502C15.7528 16.3855 15.6682 16.4045 15.5824 16.4063H1.25948C1.19891 16.4054 1.13989 16.3871 1.08949 16.3535C1.0391 16.3199 0.999495 16.2724 0.975433 16.2168C0.951371 16.1613 0.943879 16.0999 0.95386 16.0402C0.963841 15.9804 0.990869 15.9248 1.03169 15.8801L4.07486 12.5112ZM19.0857 9.7186C19.1265 9.76334 19.1535 9.81893 19.1635 9.87867C19.1735 9.93841 19.166 9.99976 19.1419 10.0553C19.1179 10.1109 19.0783 10.1584 19.0279 10.192C18.9775 10.2256 18.9185 10.2439 18.8579 10.2448L4.53953 10.2562C4.45371 10.2544 4.36912 10.2353 4.29084 10.2001C4.21256 10.1649 4.1422 10.1142 4.08397 10.0512L1.02714 6.69366C0.986314 6.64891 0.959286 6.59333 0.949305 6.53359C0.939324 6.47385 0.946815 6.41249 0.970877 6.35691C0.99494 6.30133 1.03455 6.25388 1.08494 6.22027C1.13533 6.18667 1.19436 6.16833 1.25492 6.16748L15.5733 6.15609C15.6591 6.15785 15.7437 6.17691 15.822 6.21213C15.9003 6.24736 15.9706 6.29802 16.0288 6.36109L19.0857 9.7186ZM4.07486 0.210985C4.13309 0.147915 4.20345 0.0972497 4.28173 0.0620237C4.36001 0.0267976 4.4446 0.00773618 4.53042 0.00598145L18.8533 0.0173705C18.9139 0.0182235 18.9729 0.0365554 19.0233 0.0701613C19.0737 0.103767 19.1133 0.151216 19.1374 0.2068C19.1614 0.262384 19.1689 0.323736 19.159 0.383477C19.149 0.443218 19.1219 0.498803 19.0811 0.543547L16.038 3.90105C15.9797 3.96412 15.9094 4.01479 15.8311 4.05001C15.7528 4.08524 15.6682 4.1043 15.5824 4.10605H1.25948C1.19891 4.1052 1.13989 4.08687 1.08949 4.05326C1.0391 4.01966 0.999495 3.97221 0.975433 3.91662C0.951371 3.86104 0.943879 3.79969 0.95386 3.73995C0.963841 3.68021 0.990869 3.62462 1.03169 3.57988L4.07486 0.210985Z" fill="white" />
+                            </svg>
+                            <p class="di-cards-num">0.3234</p>
+                            <p class="di-cards-tokens">16 tokens</p>
+                        </div>
+                        <button type="button" class="di-cards-btn">
+                            <span class="di-cards-text"><span class="di-play-now">Play Now</span>
+                            <svg width="14" height="18" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.53137 1.90942L14.2942 10.1141L1.53137 18.3188V1.90942Z" stroke="white" stroke-width="2.18792" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </span>
+                        </button>
+                        <button type="button" class="di-nft-btn">Buy NFT</button>
+                        <svg class="ma-svg" width="380" height="457" viewBox="0 0 380 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3043 0.91272H1V456H378.416V291.359" stroke="white" stroke-width="1.49803"/>
+                        </svg>
+                    </li>
+                    <li class="di-item">
+                        <img src="./images/nft-10.png" alt="music nft" class="di-img">
+                        <h4 class="di-genre">Heart & Soul</h4>
+                        <div class="di-cards-price">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07486 12.5112C4.13309 12.4481 4.20345 12.3975 4.28173 12.3622C4.36001 12.327 4.4446 12.308 4.53042 12.3062H18.8442C18.9048 12.3071 18.9638 12.3254 19.0142 12.359C19.0646 12.3926 19.1042 12.44 19.1283 12.4956C19.1523 12.5512 19.1598 12.6126 19.1498 12.6723C19.1399 12.732 19.1128 12.7876 19.072 12.8324L16.038 16.2013C15.9797 16.2643 15.9094 16.315 15.8311 16.3502C15.7528 16.3855 15.6682 16.4045 15.5824 16.4063H1.25948C1.19891 16.4054 1.13989 16.3871 1.08949 16.3535C1.0391 16.3199 0.999495 16.2724 0.975433 16.2168C0.951371 16.1613 0.943879 16.0999 0.95386 16.0402C0.963841 15.9804 0.990869 15.9248 1.03169 15.8801L4.07486 12.5112ZM19.0857 9.7186C19.1265 9.76334 19.1535 9.81893 19.1635 9.87867C19.1735 9.93841 19.166 9.99976 19.1419 10.0553C19.1179 10.1109 19.0783 10.1584 19.0279 10.192C18.9775 10.2256 18.9185 10.2439 18.8579 10.2448L4.53953 10.2562C4.45371 10.2544 4.36912 10.2353 4.29084 10.2001C4.21256 10.1649 4.1422 10.1142 4.08397 10.0512L1.02714 6.69366C0.986314 6.64891 0.959286 6.59333 0.949305 6.53359C0.939324 6.47385 0.946815 6.41249 0.970877 6.35691C0.99494 6.30133 1.03455 6.25388 1.08494 6.22027C1.13533 6.18667 1.19436 6.16833 1.25492 6.16748L15.5733 6.15609C15.6591 6.15785 15.7437 6.17691 15.822 6.21213C15.9003 6.24736 15.9706 6.29802 16.0288 6.36109L19.0857 9.7186ZM4.07486 0.210985C4.13309 0.147915 4.20345 0.0972497 4.28173 0.0620237C4.36001 0.0267976 4.4446 0.00773618 4.53042 0.00598145L18.8533 0.0173705C18.9139 0.0182235 18.9729 0.0365554 19.0233 0.0701613C19.0737 0.103767 19.1133 0.151216 19.1374 0.2068C19.1614 0.262384 19.1689 0.323736 19.159 0.383477C19.149 0.443218 19.1219 0.498803 19.0811 0.543547L16.038 3.90105C15.9797 3.96412 15.9094 4.01479 15.8311 4.05001C15.7528 4.08524 15.6682 4.1043 15.5824 4.10605H1.25948C1.19891 4.1052 1.13989 4.08687 1.08949 4.05326C1.0391 4.01966 0.999495 3.97221 0.975433 3.91662C0.951371 3.86104 0.943879 3.79969 0.95386 3.73995C0.963841 3.68021 0.990869 3.62462 1.03169 3.57988L4.07486 0.210985Z" fill="white" />
+                            </svg>
+                            <p class="di-cards-num">0.3234</p>
+                            <p class="di-cards-tokens">16 tokens</p>
+                        </div>
+                        <button type="button" class="di-cards-btn">
+                            <span class="di-cards-text"><span class="di-play-now">Play Now</span>
+                            <svg width="14" height="18" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.53137 1.90942L14.2942 10.1141L1.53137 18.3188V1.90942Z" stroke="white" stroke-width="2.18792" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </span>
+                        </button>
+                        <button type="button" class="di-nft-btn">Buy NFT</button>
+                        <svg class="ma-svg" width="380" height="457" viewBox="0 0 380 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3043 0.91272H1V456H378.416V291.359" stroke="white" stroke-width="1.49803"/>
+                        </svg>
+                    </li>
+                    <li class="di-item">
+                        <img src="./images/nft-11.png" alt="music nft" class="di-img">
+                        <h4 class="di-genre">Heart & Soul</h4>
+                        <div class="di-cards-price">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07486 12.5112C4.13309 12.4481 4.20345 12.3975 4.28173 12.3622C4.36001 12.327 4.4446 12.308 4.53042 12.3062H18.8442C18.9048 12.3071 18.9638 12.3254 19.0142 12.359C19.0646 12.3926 19.1042 12.44 19.1283 12.4956C19.1523 12.5512 19.1598 12.6126 19.1498 12.6723C19.1399 12.732 19.1128 12.7876 19.072 12.8324L16.038 16.2013C15.9797 16.2643 15.9094 16.315 15.8311 16.3502C15.7528 16.3855 15.6682 16.4045 15.5824 16.4063H1.25948C1.19891 16.4054 1.13989 16.3871 1.08949 16.3535C1.0391 16.3199 0.999495 16.2724 0.975433 16.2168C0.951371 16.1613 0.943879 16.0999 0.95386 16.0402C0.963841 15.9804 0.990869 15.9248 1.03169 15.8801L4.07486 12.5112ZM19.0857 9.7186C19.1265 9.76334 19.1535 9.81893 19.1635 9.87867C19.1735 9.93841 19.166 9.99976 19.1419 10.0553C19.1179 10.1109 19.0783 10.1584 19.0279 10.192C18.9775 10.2256 18.9185 10.2439 18.8579 10.2448L4.53953 10.2562C4.45371 10.2544 4.36912 10.2353 4.29084 10.2001C4.21256 10.1649 4.1422 10.1142 4.08397 10.0512L1.02714 6.69366C0.986314 6.64891 0.959286 6.59333 0.949305 6.53359C0.939324 6.47385 0.946815 6.41249 0.970877 6.35691C0.99494 6.30133 1.03455 6.25388 1.08494 6.22027C1.13533 6.18667 1.19436 6.16833 1.25492 6.16748L15.5733 6.15609C15.6591 6.15785 15.7437 6.17691 15.822 6.21213C15.9003 6.24736 15.9706 6.29802 16.0288 6.36109L19.0857 9.7186ZM4.07486 0.210985C4.13309 0.147915 4.20345 0.0972497 4.28173 0.0620237C4.36001 0.0267976 4.4446 0.00773618 4.53042 0.00598145L18.8533 0.0173705C18.9139 0.0182235 18.9729 0.0365554 19.0233 0.0701613C19.0737 0.103767 19.1133 0.151216 19.1374 0.2068C19.1614 0.262384 19.1689 0.323736 19.159 0.383477C19.149 0.443218 19.1219 0.498803 19.0811 0.543547L16.038 3.90105C15.9797 3.96412 15.9094 4.01479 15.8311 4.05001C15.7528 4.08524 15.6682 4.1043 15.5824 4.10605H1.25948C1.19891 4.1052 1.13989 4.08687 1.08949 4.05326C1.0391 4.01966 0.999495 3.97221 0.975433 3.91662C0.951371 3.86104 0.943879 3.79969 0.95386 3.73995C0.963841 3.68021 0.990869 3.62462 1.03169 3.57988L4.07486 0.210985Z" fill="white" />
+                            </svg>
+                            <p class="di-cards-num">0.3234</p>
+                            <p class="di-cards-tokens">16 tokens</p>
+                        </div>
+                        <button type="button" class="di-cards-btn">
+                            <span class="di-cards-text"><span class="di-play-now">Play Now</span>
+                            <svg width="14" height="18" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.53137 1.90942L14.2942 10.1141L1.53137 18.3188V1.90942Z" stroke="white" stroke-width="2.18792" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </span>
+                        </button>
+                        <button type="button" class="di-nft-btn">Buy NFT</button>
+                        <svg class="ma-svg" width="380" height="457" viewBox="0 0 380 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3043 0.91272H1V456H378.416V291.359" stroke="white" stroke-width="1.49803"/>
+                        </svg>
+                    </li>
+                    <li class="di-item">
+                        <img src="./images/nft-12.png" alt="music nft" class="di-img">
+                        <h4 class="di-genre">Heart & Soul</h4>
+                        <div class="di-cards-price">
+                            <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.07486 12.5112C4.13309 12.4481 4.20345 12.3975 4.28173 12.3622C4.36001 12.327 4.4446 12.308 4.53042 12.3062H18.8442C18.9048 12.3071 18.9638 12.3254 19.0142 12.359C19.0646 12.3926 19.1042 12.44 19.1283 12.4956C19.1523 12.5512 19.1598 12.6126 19.1498 12.6723C19.1399 12.732 19.1128 12.7876 19.072 12.8324L16.038 16.2013C15.9797 16.2643 15.9094 16.315 15.8311 16.3502C15.7528 16.3855 15.6682 16.4045 15.5824 16.4063H1.25948C1.19891 16.4054 1.13989 16.3871 1.08949 16.3535C1.0391 16.3199 0.999495 16.2724 0.975433 16.2168C0.951371 16.1613 0.943879 16.0999 0.95386 16.0402C0.963841 15.9804 0.990869 15.9248 1.03169 15.8801L4.07486 12.5112ZM19.0857 9.7186C19.1265 9.76334 19.1535 9.81893 19.1635 9.87867C19.1735 9.93841 19.166 9.99976 19.1419 10.0553C19.1179 10.1109 19.0783 10.1584 19.0279 10.192C18.9775 10.2256 18.9185 10.2439 18.8579 10.2448L4.53953 10.2562C4.45371 10.2544 4.36912 10.2353 4.29084 10.2001C4.21256 10.1649 4.1422 10.1142 4.08397 10.0512L1.02714 6.69366C0.986314 6.64891 0.959286 6.59333 0.949305 6.53359C0.939324 6.47385 0.946815 6.41249 0.970877 6.35691C0.99494 6.30133 1.03455 6.25388 1.08494 6.22027C1.13533 6.18667 1.19436 6.16833 1.25492 6.16748L15.5733 6.15609C15.6591 6.15785 15.7437 6.17691 15.822 6.21213C15.9003 6.24736 15.9706 6.29802 16.0288 6.36109L19.0857 9.7186ZM4.07486 0.210985C4.13309 0.147915 4.20345 0.0972497 4.28173 0.0620237C4.36001 0.0267976 4.4446 0.00773618 4.53042 0.00598145L18.8533 0.0173705C18.9139 0.0182235 18.9729 0.0365554 19.0233 0.0701613C19.0737 0.103767 19.1133 0.151216 19.1374 0.2068C19.1614 0.262384 19.1689 0.323736 19.159 0.383477C19.149 0.443218 19.1219 0.498803 19.0811 0.543547L16.038 3.90105C15.9797 3.96412 15.9094 4.01479 15.8311 4.05001C15.7528 4.08524 15.6682 4.1043 15.5824 4.10605H1.25948C1.19891 4.1052 1.13989 4.08687 1.08949 4.05326C1.0391 4.01966 0.999495 3.97221 0.975433 3.91662C0.951371 3.86104 0.943879 3.79969 0.95386 3.73995C0.963841 3.68021 0.990869 3.62462 1.03169 3.57988L4.07486 0.210985Z" fill="white" />
+                            </svg>
+                            <p class="di-cards-num">0.3234</p>
+                            <p class="di-cards-tokens">16 tokens</p>
+                        </div>
+                        <button type="button" class="di-cards-btn">
+                            <span class="di-cards-text"><span class="di-play-now">Play Now</span>
+                            <svg width="14" height="18" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.53137 1.90942L14.2942 10.1141L1.53137 18.3188V1.90942Z" stroke="white" stroke-width="2.18792" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            </span>
+                        </button>
+                        <button type="button" class="di-nft-btn">Buy NFT</button>
+                        <svg class="ma-svg" width="380" height="457" viewBox="0 0 380 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3043 0.91272H1V456H378.416V291.359" stroke="white" stroke-width="1.49803"/>
+                        </svg>
+                    </li>
+                </ul>
+                <div class="gradient gradient-10"></div>
+                <button type="button" class="di-more-btn">
+                    <span class="di-btn-span">
+                        <span class="di-btn-text">Discover More Music NFT</span>
+                        <svg width="8" height="15" viewBox="0 0 8 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 13.5L7 7.5L1 1.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </section>
+
+        <!-- #endregion -->
+    
+        <!-- #region footer -->
+
+        <footer class="footer">
+            <div class="footer-div container">
+                <div class="f-left">
+                    <h2 class="f-h">Shape the NFT Music</h2>
+                    <ul class="f-ul">
+                        <li class="f-li">
+                            <a href="page.html" target="_blank" class="f-li-a">Facebook</a>
+                        </li>
+                        <li class="f-li">
+                            <a href="page.html" target="_blank" class="f-li-a">Twittter</a>
+                        </li>
+                        <li class="f-li">
+                            <a href="page.html" target="_blank" class="f-li-a">Medium</a>
+                        </li>
+                        <li class="f-li">
+                            <a href="page.html" target="_blank" class="f-li-a">Contacts</a>
+                        </li>
+                    </ul>
+                    <div class="f-legal">
+                        <a href="terms-and-conditions.html" target="_blank" class="f-legal-a">Privacy Policy</a>
+                        <a href="terms-and-conditions.html" target="_blank" class="f-legal-a">Terms and Conditions</a>
+                    </div>
+                </div>
+                <div class="f-right">
+                    <ul class="f-ul-right">
+                        <li class="f-li-right">
+                            <a href="#" class="f-a-right">
+                                <button type="button" class="f-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M16 12L12 8L8 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M12 16V8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" /></svg>Back to the top
+                                </button>
+                            </a>
+                        </li>
+                        <li class="f-li-right">Copyright © 2025 herdssman</li>
+                    </ul>
+                </div>
+                <!-- <div class="gradient gradient-11"></div> -->
+            </div>
+        </footer>
+
+        <!-- #endregion -->
+
+
+        <script src="main.js"></script>
+
+    </main>
+
+    
+
+
+    
+</body>
+</html>
